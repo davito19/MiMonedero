@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mi Monedero</string>
+    <string name="login_title">Log In</string>
+    <string name="login_subtitle">Join the app</string>
+    <string name="login_button">accept</string>
+    <string name="login_sign_up_button">sign up</string>
+    <string name="login_email_input_hint">email</string>
+    <string name="login_password_input_hint">password</string>
 </resources>
