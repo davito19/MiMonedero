@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.davito.mimonerdero.R
 import com.davito.mimonerdero.databinding.ActivityLoginBinding
-import com.davito.mimonerdero.ui.HomeActivity
+import com.davito.mimonerdero.ui.home.HomeActivity
 import com.davito.mimonerdero.ui.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity() {

@@ -3,23 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/home_fragment">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/home_fragment"
         android:name="com.davito.mimonerdero.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.davito.mimonerdero.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/income_fragment"
+        android:name="com.davito.mimonerdero.ui.income.IncomeFragment"
+        android:label="@string/menu_income"
+        tools:layout="@layout/fragment_income" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.davito.mimonerdero.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/expenses_fragment"
+        android:name="com.davito.mimonerdero.ui.expenses.ExpensesFragment"
+        android:label="@string/menu_expenses"
+        tools:layout="@layout/fragment_expenses" />
+    <fragment
+        android:id="@+id/reports_fragment"
+        android:name="com.davito.mimonerdero.ui.reports.ReportsFragment"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_reports" />
+    <fragment
+        android:id="@+id/movements_fragment"
+        android:name="com.davito.mimonerdero.ui.movements.MovementsFragment"
+        android:label="@string/menu_movements"
+        tools:layout="@layout/fragment_movements" />
 </navigation>

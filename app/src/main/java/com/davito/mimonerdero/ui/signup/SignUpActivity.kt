@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.davito.mimonerdero.databinding.ActivitySignUpBinding
-import com.davito.mimonerdero.ui.HomeActivity
+import com.davito.mimonerdero.ui.home.HomeActivity
 
 class SignUpActivity : AppCompatActivity() {
 

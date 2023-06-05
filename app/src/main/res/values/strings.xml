@@ -9,7 +9,7 @@
     <string name="sign_up_title">Sign Up</string>
     <string name="sign_up_subtitle">Register</string>
     <string name="sign_up_button">sign up</string>
-    <string name="sign_up_cancel_button">cancel</string>
+    <string name="sign_up_cancel_button">Cancel</string>
     <string name="name_input_edit">name</string>
     <string name="email_input_edit">email</string>
     <string name="password_input_edit">password</string>
@@ -26,4 +26,13 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_reports">Reports</string>
+    <string name="menu_movements">Movements</string>
+    <string name="menu_expenses">expenses</string>
+    <string name="menu_income">Income</string>
+    <string name="explain_expenses">"En esta pantalla se podrán registrar los gastos que ha tenido la persona "</string>
+    <string name="explain_income">En este fragmento los usuairos podrán registrar sus ingresos</string>
+    <string name="explain_movements">en este fragmento los usuarios podrán ver sus movimientos</string>
+    <string name="explain_home">en esta pantalla los usuarios podrán visualizar todos los elementos y funcionalidades de la app</string>
+    <string name="explain_reports">en este fragmento los usuarios visualizarán un reporte de sus estado finaciero</string>
 </resources>
