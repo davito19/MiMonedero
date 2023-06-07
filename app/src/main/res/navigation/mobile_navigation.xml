@@ -9,7 +9,20 @@
         android:id="@+id/home_fragment"
         android:name="com.davito.mimonerdero.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_fragment_to_income_fragment"
+            app:destination="@id/income_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_expenses_fragment"
+            app:destination="@id/expenses_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_movements_fragment"
+            app:destination="@id/movements_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_reports_fragment"
+            app:destination="@id/reports_fragment" />
+    </fragment>
     <fragment
         android:id="@+id/income_fragment"
         android:name="com.davito.mimonerdero.ui.income.IncomeFragment"

@@ -51,4 +51,5 @@
     <string name="category_education">education</string>
     <string name="mount_incomes">amount incomes</string>
     <string name="mount_outcome">amount outcomes</string>
+    <string name="home">Home</string>
 </resources>

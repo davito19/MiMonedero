@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -59,6 +60,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore-ktx:24.6.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
+    //
+    implementation 'com.github.Philjay:MPAndroidChart:v3.1.0'
     //test
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
