@@ -21,7 +21,7 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">profile</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -35,4 +35,7 @@
     <string name="explain_movements">en este fragmento los usuarios podrán ver sus movimientos</string>
     <string name="explain_home">en esta pantalla los usuarios podrán visualizar todos los elementos y funcionalidades de la app</string>
     <string name="explain_reports">en este fragmento los usuarios visualizarán un reporte de sus estado finaciero</string>
+    <string name="example">Example</string>
+    <string name="sign_out_button">Sign Out</string>
+    <string name="developer">by: davito</string>
 </resources>

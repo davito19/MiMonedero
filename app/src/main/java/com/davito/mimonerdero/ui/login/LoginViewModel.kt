@@ -18,6 +18,9 @@ class LoginViewModel : ViewModel() {
     private val _isSuccessSignIn: MutableLiveData<Boolean> = MutableLiveData()
     val isSuccessSignIn: LiveData<Boolean> = _isSuccessSignIn
 
+    private val _isSessionActive: MutableLiveData<Boolean> = MutableLiveData()
+    val isSessionActive: LiveData<Boolean> = _isSessionActive
+
     fun validateLogin(email: String, password: String) {
         if (email.isEmpty() || password.isEmpty()) _errorMsg.value = "You must enter all the fields"
         else {
@@ -47,6 +50,10 @@ class LoginViewModel : ViewModel() {
                 }
             }
         }
+    }
+
+    fun validateSessionActive() {
+        _isSessionActive.postValue(userRepository.isSessionActive())
     }
 
 }

@@ -1,7 +1,9 @@
 package com.davito.mimonerdero.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -12,6 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.davito.mimonerdero.R
 import com.davito.mimonerdero.databinding.ActivityHomeBinding
+import com.davito.mimonerdero.ui.profile.ProfileActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -45,6 +48,19 @@ class HomeActivity : AppCompatActivity() {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.home, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.action_settings -> {
+                startActivity(Intent(this@HomeActivity, ProfileActivity::class.java))
+                finish()
+                true
+            }
+            else -> {
+                super.onOptionsItemSelected(item)
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
