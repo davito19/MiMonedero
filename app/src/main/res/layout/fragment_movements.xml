@@ -4,20 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgraund_cell"
     tools:context=".ui.movements.MovementsFragment">
 
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="63dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/explain_income"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/outcome_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="@string/explain_movements"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/mount_outcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/income_tile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/mount_incomes"
+        app:layout_constraintEnd_toStartOf="@+id/outcome_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/outcome_amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/example"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_title" />
+
+    <TextView
+        android:id="@+id/income_amount_text_vie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="136dp"
+        android:text="@string/example"
+        app:layout_constraintEnd_toStartOf="@+id/outcome_amount_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/income_tile" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movements_reclicler_view"
+        android:layout_width="354dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="310dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/card_view_balance_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

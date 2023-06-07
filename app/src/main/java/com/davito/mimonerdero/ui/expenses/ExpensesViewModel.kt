@@ -67,7 +67,7 @@ class ExpensesViewModel : ViewModel() {
         if (salary) return "home"
         if (loan) return "food"
         if (commissions) return "education"
-        if (others) return "others"
+        if (others) return "other"
         return "home"
     }
 
