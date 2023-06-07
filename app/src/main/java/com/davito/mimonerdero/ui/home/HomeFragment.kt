@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
 
         viewModel.balanceMsg.observe(viewLifecycleOwner) {
             binding.HomeTitleTextView.text = buildString {
-                append("tu balance es $ ")
+                append("your balance is $ ")
                 append(it)
             }
         }

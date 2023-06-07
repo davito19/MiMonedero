@@ -39,7 +39,7 @@ class IncomeFragment : Fragment() {
 
         viewModel.incomes.observe(viewLifecycleOwner){
             binding.incomesTitleTextView.text = buildString {
-                append("Imcomes: $ ")
+                append("Incomes: $ ")
                 append(it)
             }
         }
