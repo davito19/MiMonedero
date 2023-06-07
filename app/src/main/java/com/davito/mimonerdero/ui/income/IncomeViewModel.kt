@@ -1,5 +1,7 @@
 package com.davito.mimonerdero.ui.income
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,6 +11,7 @@ import com.davito.mimonerdero.data.ResourceRemote
 import com.davito.mimonerdero.model.Income
 import com.google.firebase.firestore.ktx.toObject
 import kotlinx.coroutines.launch
+import java.time.Instant
 
 class IncomeViewModel : ViewModel() {
 
@@ -23,6 +26,7 @@ class IncomeViewModel : ViewModel() {
     private val _incomes: MutableLiveData<String?> = MutableLiveData()
     val incomes: LiveData<String?> = _incomes
 
+    @RequiresApi(Build.VERSION_CODES.O)
     fun validateData(
         amount: String,
         salary: Boolean,
@@ -36,7 +40,7 @@ class IncomeViewModel : ViewModel() {
                 val income = Income(
                     amount = amount.toDouble(),
                     category = whatCategory(salary,loan,commissions,others),
-                    date = "06/06/2023"
+                    date = Instant.now().toString()
                 )
                 val  result = incomeOutComeRepository.saveIncome(income)
                 result.let { resourceRemote ->

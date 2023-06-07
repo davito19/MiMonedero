@@ -45,4 +45,8 @@
     <string name="Commissions_category">Commissions</string>
     <string name="others_category">others</string>
     <string name="save_button">save</string>
+    <string name="outcome_subtitle">record an outcome</string>
+    <string name="home_category">home</string>
+    <string name="food_category">food</string>
+    <string name="category_education">education</string>
 </resources>
