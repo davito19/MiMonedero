@@ -4,20 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgraund_cell"
     tools:context=".ui.income.IncomeFragment">
 
-    <TextView
-        android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/explain_income"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/income_constrain_layout"
+        android:layout_width="320dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/backgraund_card"
+        app:circularflow_defaultRadius="32dp"
+        app:circularflow_radiusInDP="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/save_buton_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="34dp"
+            android:text="@string/save_button"
+            android:textColor="@color/secundary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/cancel_button_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="34dp"
+            android:text="@string/sign_up_cancel_button"
+            android:textColor="@color/secundary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/save_buton_text_view" />
+
+        <TextView
+            android:id="@+id/income_subtitle_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/income_subtitle"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/income_edit_text"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/income_hint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/income_subtitle_text_view" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/income_edit_text" >
+
+            <RadioButton
+                android:id="@+id/salary_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/Salary_category"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/loan_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loan_category"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/commissions_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Commissions_category"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/others_radio_buttton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/others_category"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/incomes_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/income_subtitle"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="63dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/explain_income"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toTopOf="@+id/incomes_title_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

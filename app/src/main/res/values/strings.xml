@@ -38,4 +38,11 @@
     <string name="example">Example</string>
     <string name="sign_out_button">Sign Out</string>
     <string name="developer">by: davito</string>
+    <string name="income_subtitle">record an income</string>
+    <string name="income_hint">amount</string>
+    <string name="Salary_category">salary</string>
+    <string name="loan_category">Loan</string>
+    <string name="Commissions_category">Commissions</string>
+    <string name="others_category">others</string>
+    <string name="save_button">save</string>
 </resources>
